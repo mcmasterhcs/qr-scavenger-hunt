@@ -47,6 +47,8 @@ body {
 #home-screen {
   background-color: var(--white);
   border: 1px solid var(--border);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /* HOME HEADER */
@@ -56,6 +58,8 @@ body {
   padding: 28px 20px 22px;
   text-align: center;
   flex-shrink: 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .home-header h1 {
   font-size: 1.45rem;
