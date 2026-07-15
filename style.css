@@ -8,6 +8,13 @@
 :root {
   --blue:          #1a4a8a;
   --blue-dark:     #0f2d5c;
+  --maroon:     #7A003C;
+  --gold:     #FDBF57;
+  --grey: #495965;
+  --blue-dark:     #0f2d5c;
+  --blue-dark:     #0f2d5c;
+  --blue-dark:     #0f2d5c;
+  --blue-dark:     #0f2d5c;
   --green:         #2e7d32;
   --green-light:   #e8f5e9;
   --green-btn:     #3a7d34;
@@ -41,7 +48,7 @@ body {
 
 /* HOME HEADER */
 .home-header {
-  background: var(--blue);
+  background: var(--maroon);
   color: #fff;
   padding: 28px 20px 22px;
   text-align: center;
