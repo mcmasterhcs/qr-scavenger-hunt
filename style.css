@@ -47,8 +47,7 @@ body {
 #home-screen {
   background-color: var(--white);
   border: 1px solid var(--border);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
 }
 
 /* HOME HEADER */
