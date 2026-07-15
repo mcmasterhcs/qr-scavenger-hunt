@@ -43,7 +43,7 @@ body {
 }
 .screen.active { display: flex; }
 
-.home-screen {
+#home-screen {
   background: var(--white);
 }
 
