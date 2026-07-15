@@ -43,6 +43,10 @@ body {
 }
 .screen.active { display: flex; }
 
+.home-screen {
+  background: var(--white);
+}
+
 /* HOME HEADER */
 .home-header {
   background: var(--maroon);
