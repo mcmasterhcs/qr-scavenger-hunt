@@ -8,13 +8,9 @@
 :root {
   --blue:          #1a4a8a;
   --blue-dark:     #0f2d5c;
-  --maroon:     #7A003C;
-  --gold:     #FDBF57;
-  --grey: #495965;
-  --blue-dark:     #0f2d5c;
-  --blue-dark:     #0f2d5c;
-  --blue-dark:     #0f2d5c;
-  --blue-dark:     #0f2d5c;
+  --maroon:        #7A003C;
+  --gold:          #FDBF57;
+  --grey:          #495965;
   --green:         #2e7d32;
   --green-light:   #e8f5e9;
   --green-btn:     #3a7d34;
@@ -134,7 +130,7 @@ body {
 
 /* CLUE HEADER */
 .clue-header {
-  background: var(--blue);
+  background: var(--maroon);
   color: #fff;
   padding: 14px 16px;
   display: flex;
@@ -230,10 +226,10 @@ body {
   outline: none;
   transition: border-color 0.15s;
 }
-.text-entry input:focus { border-color: var(--blue); }
+.text-entry input:focus { border-color: var(--maroon); }
 
 .btn-submit {
-  background: var(--blue);
+  background: var(--maroon);
   color: #fff;
   border: none;
   border-radius: var(--radius);
