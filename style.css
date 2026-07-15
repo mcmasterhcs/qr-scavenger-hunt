@@ -26,12 +26,13 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif;
-  background: var(--bg);
   color: var(--text);
   min-height: 100dvh;
   /* centre on wide screens while staying mobile-first */
   max-width: 480px;
   margin: 0 auto;
+  background-color: #fff;
+  background-image: url("images/texture-paper-3.png");
 }
 
 /* SCREENS */
