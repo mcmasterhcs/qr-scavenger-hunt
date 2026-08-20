@@ -59,11 +59,13 @@ function renderGrid() {
   const allDone = CLUES.every(c => progress[c.id]);
   if (allDone) {
     document.getElementById('completion-modal').classList.remove('hidden');
+    gtag('event', 'hunt_complete');
   }
 }
 
 /* RULES SCREEN */
 function openRules() {
+  gtag('event', 'rules_open');
   showScreen ('rules-screen');
 }
 
@@ -71,6 +73,8 @@ function openRules() {
 function openClue(id) {
   currentClueId = id;
   const clue = CLUES.find(c => c.id === id);
+
+  gtag('event', 'clue_open', { clue_id: clue.id, clue_title: clue.title });
 
   document.getElementById('clue-title').textContent = clue.title;
   document.getElementById('clue-text').textContent = clue.text;
