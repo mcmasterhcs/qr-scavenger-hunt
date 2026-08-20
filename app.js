@@ -4,6 +4,7 @@ const STORAGE_KEY = 'scavenger_hunt_progress';
 /* STATE */
 let currentClueId = null;  // id of the clue page currently shown
 let scanner = null;         // Html5Qrcode instance when active
+let returnCountdownInterval = null; // interval id for the post-success countdown
 
 /* PROGRESS (persisted in localStorage) */
 function loadProgress() {
@@ -35,6 +36,7 @@ function showScreen(id) {
 
 function goHome() {
   stopScanner();
+  stopReturnCountdown();
   currentClueId = null;
   renderGrid();
   showScreen('home-screen');
@@ -59,7 +61,11 @@ function renderGrid() {
   const allDone = CLUES.every(c => progress[c.id]);
   if (allDone) {
     document.getElementById('completion-modal').classList.remove('hidden');
-    gtag('event', 'hunt_complete');
+    if (!progress._completedFired) {
+      progress._completedFired = true;
+      saveProgress(progress);
+      gtag('event', 'hunt_complete');
+    }
   }
 }
 
@@ -93,6 +99,7 @@ function openClue(id) {
   // Reset inputs and feedback
   document.getElementById('answer-input').value = '';
   hideFeedback();
+  stopReturnCountdown();
 
   showScreen('clue-screen');
 }
@@ -123,12 +130,46 @@ function checkAnswer(raw, fromQR = false) {
   if (accepted.includes(input)) {
     progress[currentClueId] = true;
     saveProgress(progress);
-    showFeedback('Correct! Great job finding this spot! 🎉', 'success');
-    // Brief pause so the student can read the feedback, then return home
-    setTimeout(goHome, 1800);
+    startReturnCountdown(2);
   } else {
     showFeedback('That doesn\'t match — try again!', 'error');
   }
+}
+
+/* RETURN COUNTDOWN (after a correct answer) */
+function startReturnCountdown(seconds) {
+  hideFeedback();
+  document.getElementById('submit-btn').disabled = true;
+  document.getElementById('answer-input').disabled = true;
+  document.getElementById('scan-btn').disabled = true;
+
+  let remaining = seconds;
+  const submitBtn = document.getElementById('submit-btn');
+  const render = () => {
+    submitBtn.textContent = `Returning in ${remaining}…`;
+  };
+
+  render();
+  returnCountdownInterval = setInterval(() => {
+    remaining -= 1;
+    if (remaining <= 0) {
+      stopReturnCountdown();
+      goHome();
+      return;
+    }
+    render();
+  }, 1000);
+}
+
+function stopReturnCountdown() {
+  if (returnCountdownInterval) {
+    clearInterval(returnCountdownInterval);
+    returnCountdownInterval = null;
+  }
+  document.getElementById('submit-btn').disabled = false;
+  document.getElementById('submit-btn').textContent = 'Submit';
+  document.getElementById('answer-input').disabled = false;
+  document.getElementById('scan-btn').disabled = false;
 }
 
 /* QR SCANNER */
