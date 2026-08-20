@@ -8,13 +8,9 @@
 :root {
   --blue:          #1a4a8a;
   --blue-dark:     #0f2d5c;
-  --maroon:     #7A003C;
-  --gold:     #FDBF57;
-  --grey: #495965;
-  --blue-dark:     #0f2d5c;
-  --blue-dark:     #0f2d5c;
-  --blue-dark:     #0f2d5c;
-  --blue-dark:     #0f2d5c;
+  --maroon:        #7A003C;
+  --gold:          #FDBF57;
+  --grey:          #495965;
   --green:         #2e7d32;
   --green-light:   #e8f5e9;
   --green-btn:     #3a7d34;
@@ -24,18 +20,20 @@
   --text:          #212121;
   --text-muted:    #757575;
   --border:        #e0e0e0;
+  --white:         #fff;
   --radius:        12px;
   --shadow:        0 2px 8px rgba(0,0,0,0.10);
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif;
   color: var(--text);
   min-height: 100dvh;
   /* centre on wide screens while staying mobile-first */
   max-width: 480px;
   margin: 0 auto;
+  background-color: #fff;
+  background-image: url("images/texture-paper-3.png");
 }
 
 /* SCREENS */
@@ -46,6 +44,12 @@ body {
 }
 .screen.active { display: flex; }
 
+#home-screen {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+}
+
 /* HOME HEADER */
 .home-header {
   background: var(--maroon);
@@ -53,6 +57,8 @@ body {
   padding: 28px 20px 22px;
   text-align: center;
   flex-shrink: 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .home-header h1 {
   font-size: 1.45rem;
@@ -134,7 +140,7 @@ body {
 
 /* CLUE HEADER */
 .clue-header {
-  background: var(--blue);
+  background: var(--maroon);
   color: #fff;
   padding: 14px 16px;
   display: flex;
@@ -230,10 +236,10 @@ body {
   outline: none;
   transition: border-color 0.15s;
 }
-.text-entry input:focus { border-color: var(--blue); }
+.text-entry input:focus { border-color: var(--maroon); }
 
 .btn-submit {
-  background: var(--blue);
+  background: var(--maroon);
   color: #fff;
   border: none;
   border-radius: var(--radius);
