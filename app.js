@@ -146,7 +146,7 @@ function startReturnCountdown(seconds) {
   let remaining = seconds;
   const submitBtn = document.getElementById('submit-btn');
   const render = () => {
-    submitBtn.textContent = `Returning in ${remaining}…`;
+    submitBtn.textContent = `Back in ${remaining}…`;
   };
 
   render();
