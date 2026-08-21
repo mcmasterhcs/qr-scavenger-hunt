@@ -32,8 +32,18 @@ body {
   /* centre on wide screens while staying mobile-first */
   max-width: 480px;
   margin: 0 auto;
-  background-color: #fff;
-  background-image: url("images/texture-paper-3.png");
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/background_150x150.svg");
+  background-repeat: repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  
 }
 
 /* SCREENS */
@@ -41,6 +51,8 @@ body {
   display: none;
   flex-direction: column;
   min-height: 100dvh;
+  background: white;
+
 }
 .screen.active { display: flex; }
 
@@ -48,6 +60,8 @@ body {
   background-color: var(--white);
   border: 1px solid var(--border);
   border-radius: 15px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 /* HOME HEADER */
@@ -57,8 +71,8 @@ body {
   padding: 28px 20px 22px;
   text-align: center;
   flex-shrink: 0;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
 }
 .home-header h1 {
   font-size: 1.45rem;
@@ -147,6 +161,9 @@ body {
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
+  margin-top: 1em;
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
 }
 .back-btn {
   background: none;
