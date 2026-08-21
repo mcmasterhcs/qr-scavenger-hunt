@@ -240,5 +240,46 @@ document.getElementById('reset-btn').addEventListener('click', () => {
 document.getElementById('rules-btn').addEventListener('click', openRules);
 document.getElementById('rules-back-btn').addEventListener('click', goHome);
 
+/* SECRET DEBUG SHORTCUT — marks every clue complete */
+function completeAllClues() {
+  CLUES.forEach(clue => { progress[clue.id] = true; });
+  saveProgress(progress);
+  renderGrid();
+}
+
+// Desktop: type this word anywhere (outside a text field)
+const SECRET_WORD = 'iddqd';
+let secretBuffer = '';
+
+document.addEventListener('keydown', (e) => {
+  const tag = document.activeElement.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key.length !== 1) return; // ignore Shift, Enter, arrows, etc.
+
+  secretBuffer = (secretBuffer + e.key.toLowerCase()).slice(-SECRET_WORD.length);
+  if (secretBuffer === SECRET_WORD) {
+    secretBuffer = '';
+    completeAllClues();
+  }
+});
+
+// Mobile: tap the home screen title 7 times within 2 seconds
+const SECRET_TAP_COUNT = 7;
+const SECRET_TAP_WINDOW_MS = 2000;
+let secretTapCount = 0;
+let secretTapTimer = null;
+
+document.getElementById('home-title').addEventListener('click', () => {
+  secretTapCount += 1;
+  clearTimeout(secretTapTimer);
+  secretTapTimer = setTimeout(() => { secretTapCount = 0; }, SECRET_TAP_WINDOW_MS);
+
+  if (secretTapCount >= SECRET_TAP_COUNT) {
+    secretTapCount = 0;
+    clearTimeout(secretTapTimer);
+    completeAllClues();
+  }
+});
+
 /* INIT */
 renderGrid();
