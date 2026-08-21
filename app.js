@@ -76,11 +76,17 @@ function openRules() {
 }
 
 /* CLUE SCREEN */
+// Width of the zero-padded clue number in analytics events, so GA's
+// alphabetical sort of the clue_title dimension puts "Clue 02" before
+// "Clue 10" instead of "Clue 10" before "Clue 2".
+const CLUE_ID_PAD_WIDTH = String(CLUES.length).length;
+
 function openClue(id) {
   currentClueId = id;
   const clue = CLUES.find(c => c.id === id);
 
-  gtag('event', 'clue_open', { clue_id: clue.id, clue_title: clue.title });
+  const paddedClueTitle = `Clue ${String(clue.id).padStart(CLUE_ID_PAD_WIDTH, '0')}`;
+  gtag('event', 'clue_open', { clue_id: clue.id, clue_title: paddedClueTitle });
 
   document.getElementById('clue-title').textContent = clue.title;
   document.getElementById('clue-text').textContent = clue.text;
