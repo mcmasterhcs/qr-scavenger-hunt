@@ -23,12 +23,12 @@
   <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
-
+<div class="background">
   <!-- HOME SCREEN -->
   <div id="home-screen" class="screen active">
     <header class="home-header">
-      <h1>QR Code Scavenger Hunt</h1>
-     <p class="home-subtitle">Click the buttons to view clues; find the QR codes hidden to answer them!</p>
+      <h1>Mac Move-In<br>QR Code Scavenger Hunt</h1>
+     <p class="home-subtitle">Welcome to McMaster campus! Click the clues and scan the QRs hidden around campus; complete them all for more raffle ticket entries at the Welcome Zone.</p>
       <button id="rules-btn" class="btn-rules-link">Rules/Help</button>
     </header>
     <div id="clue-grid" class="grid"></div>
@@ -45,9 +45,26 @@
         <h2>Rules & Troubleshooting</h2>
       </header>
       <div class="clue-content">
+        <h3>Rules</h3>
+        <ul>
+          <li>There are 12 clues hidden around campus.</li>
+          <li>Each clue has a QR code that you must scan to complete the clue.</li>
+          <li>The QR code poster also has a text string that you can enter manually, if scanning doesn't work.</li>
+          <li>Complete all 12 clues and show your completed list to the raffle table for more ticket entries.</li>
+          <li>Your progress is saved automatically as you complete each clue.</li>
+        </ul>
         <h3>Troubleshooting</h3>
-      <p><strong>If your camera won't open:</strong> Close this web page and open your camera app. Scan the QR code; it should show you a text string, or your phone should ask for you to search for a term. Manually add that term to the answer, and it should work!</p>
+      <p><strong>If your camera won't open:</strong> 
+        <ul>
+          <li>Close this web page and open your camera app.</li>
+          <li>Scan the QR code; it should show you a text string, or your phone should ask for you to search for a term. The poster should also say the term.</li>
+          <li>Manually add that term to the answer.</li>
+        </ul>
+      For the example below, "clue answer 1" would be the answer you'd put into the clue.</p>
       <p><img src="images/camera-example.png" width="100%" /></p>
+      <h3>Credits</h3>
+      <p>This scavenger hunt was created by <a href="mailto:demerm11@mcmaster.ca">Matt Demers</a> as part of McMaster University's Housing & Conference Services team. On behalf of the team, we hope you have a great Move-In.</p>
+      <p>The code for this site can be found  <a href="https://github.com/mcmasterhcs/qr-scavenger-hunt/tree/2026" target="_blank" rel="noopener noreferrer">on GitHub</a>.</p>
       </div>
   </div>
 
@@ -99,5 +116,6 @@
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <script src="clues.js"></script>
   <script src="app.js"></script>
+</div>
 </body>
 </html>
