@@ -19,7 +19,7 @@ const CLUES = [
     text: "This is where hungry students fuel up between classes. Look for the smell of fresh food and the sound of conversation.",
     image: "images/clue1.jpg",
     answer: "dining hall",
-    aliases: ["Commons Desk", "Commons"],
+    aliases: "Commons Desk", "Commons",
     useqr: true
   },
   {
