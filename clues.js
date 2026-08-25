@@ -27,7 +27,7 @@ const CLUES = [
     title: "Clue 2",
     text: "Books, quiet study nooks, and endless floors of knowledge — this building is a student's best friend at finals time.",
     image: null,
-    answer: "Keyes Service Desk", "Keyes"],
+    answer: "Keyes Service Desk", "Keyes",
     aliases: [],
     useqr: true
   },
@@ -90,7 +90,7 @@ const CLUES = [
     title: "Clue 9",
     text: "Feeling under the weather? This is the place to go for medical care right on campus.",
     image: null,
-    answer: "Welcome Zone",
+    answer: "Welcome",
     aliases: [],
     useqr: true
   }
