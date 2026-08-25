@@ -19,7 +19,7 @@ const CLUES = [
     text: "This is where hungry students fuel up between classes. Look for the smell of fresh food and the sound of conversation.",
     image: "images/clue1.jpg",
     answer: "dining hall",
-    aliases: ["the dining hall", "dining", "caf", "cafeteria"],
+    aliases: ["Commons Desk", "Commons"],
     useqr: true
   },
   {
@@ -27,7 +27,7 @@ const CLUES = [
     title: "Clue 2",
     text: "Books, quiet study nooks, and endless floors of knowledge — this building is a student's best friend at finals time.",
     image: null,
-    answer: "library",
+    answer: "Keyes Service Desk", "Keyes"],
     aliases: [],
     useqr: true
   },
@@ -36,7 +36,7 @@ const CLUES = [
     title: "Clue 3",
     text: "Whether you need a workout or want to cheer on your team, this facility is the heart of campus athletics.",
     image: null,
-    answer: "recreation center",
+    answer: "Campus Store",
     aliases: [],
     useqr: true
   },
@@ -45,7 +45,7 @@ const CLUES = [
     title: "Clue 4",
     text: "This outdoor gathering space sits at the center of campus. Students cross it a dozen times a day without even thinking about it.",
     image: null,
-    answer: "campus quad",
+    answer: "Mills Library",
     aliases: [],
     useqr: true
   },
@@ -54,7 +54,7 @@ const CLUES = [
     title: "Clue 5",
     text: "Looking for help with tuition, financial aid, or enrollment? This administrative building handles it all.",
     image: null,
-    answer: "administration building",
+    answer: "Wellness Centre",
     aliases: [],
     useqr: true
   },
@@ -63,7 +63,7 @@ const CLUES = [
     title: "Clue 6",
     text: "Aspiring doctors, nurses, and scientists call this building home. It smells faintly of lab chemicals.",
     image: null,
-    answer: "science building",
+    answer: "DBAC",
     aliases: [],
     useqr: true
   },
@@ -72,7 +72,7 @@ const CLUES = [
     title: "Clue 7",
     text: "Artists, actors, and musicians gather here to rehearse and perform. Check the board out front for upcoming shows.",
     image: null,
-    answer: "arts center",
+    answer: "The Hub",
     aliases: [],
     useqr: true
   },
@@ -81,7 +81,7 @@ const CLUES = [
     title: "Clue 8",
     text: "This is where your professors hold their offices and where most of your lectures will take place.",
     image: null,
-    answer: "lecture hall",
+    answer: "The Phoenix",
     aliases: [],
     useqr: true
   },
@@ -90,34 +90,7 @@ const CLUES = [
     title: "Clue 9",
     text: "Feeling under the weather? This is the place to go for medical care right on campus.",
     image: null,
-    answer: "health center",
-    aliases: [],
-    useqr: true
-  },
-  {
-    id: 10,
-    title: "Clue 10",
-    text: "Student clubs, organizations, and events are run out of this building. Check the bulletin boards — there's always something going on.",
-    image: null,
-    answer: "student union",
-    aliases: [],
-    useqr: true
-  },
-  {
-    id: 11,
-    title: "Clue 11",
-    text: "Buses stop here, bikes are parked here, and many students begin or end their day at this transit hub.",
-    image: null,
-    answer: "transit hub",
-    aliases: [],
-    useqr: true
-  },
-  {
-    id: 12,
-    title: "Clue 12",
-    text: "The final stop! This is where new students like you will be living for the next year. Welcome home.",
-    image: null,
-    answer: "residence hall",
+    answer: "Welcome Zone",
     aliases: [],
     useqr: true
   }
