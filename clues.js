@@ -18,8 +18,8 @@ const CLUES = [
     title: "Clue 1",
     text: "This is where hungry students fuel up between classes. Look for the smell of fresh food and the sound of conversation.",
     image: "images/clue1.jpg",
-    answer: "dining hall",
-    aliases: "Commons Desk", "Commons",
+    answer: "Commons Desk",
+    aliases: ["Commons"],
     useqr: true
   },
   {
@@ -27,8 +27,8 @@ const CLUES = [
     title: "Clue 2",
     text: "Books, quiet study nooks, and endless floors of knowledge — this building is a student's best friend at finals time.",
     image: null,
-    answer: "Keyes Service Desk", "Keyes",
-    aliases: [],
+    answer: "Keyes Service Desk",
+    aliases: ["Keyes"],
     useqr: true
   },
   {
