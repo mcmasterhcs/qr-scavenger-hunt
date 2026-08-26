@@ -89,7 +89,7 @@ function openClue(id) {
   gtag('event', 'clue_open', { clue_id: clue.id, clue_title: paddedClueTitle });
 
   document.getElementById('clue-title').textContent = clue.title;
-  document.getElementById('clue-text').textContent = clue.text;
+  document.getElementById('clue-text').innerHTML = clue.text;
 
   // Image: real file or placeholder
   const imgEl = document.getElementById('clue-image');
