@@ -43,7 +43,7 @@ const CLUES = [
   {
     id: 4,
     title: "Clue 4",
-    text: "Outside Mary E. Keyes Residence, you can pick up deliveries from these lockers. On the side of the lockers.",
+    text: "Outside Mary E. Keyes Residence (on the side with the traffic circle), you can pick up deliveries from these lockers. On the side of the lockers.",
     image: null,
     answer: "Keyes Lockers",
     aliases: ["Lockers"],
@@ -52,6 +52,15 @@ const CLUES = [
   {
     id: 5,
     title: "Clue 5",
+    text: "Venerable campus pub, near Mary E. Keyes and the old greenhouse on Scholar's Road. Rise from the ashes. At the front door.",
+    image: null,
+    answer: "The Phoenix",
+    aliases: [],
+    useqr: true
+  },
+  {
+    id: 6,
+    title: "Clue 6",
     text: "Located in the MSU Plaza, the Campus Store is a great place for supplies, books and apparel. At the front desk.",
     image: null,
     answer: "Campus Store",
@@ -59,8 +68,8 @@ const CLUES = [
     useqr: true
   },
   {
-    id: 6,
-    title: "Clue 6",
+    id: 7,
+    title: "Clue 7",
     text: "In the MSU Plaza, this library is a great place to study and find resources. Outside the main entrance, behind glass.",
     image: null,
     answer: "Mills Library",
@@ -68,27 +77,18 @@ const CLUES = [
     useqr: true
   },
   {
-    id: 7,
-    title: "Clue 7",
-    text: "2nd floor (not Mezanine) of PGCLL - counselling services, medical care, and wellness programs. By the main doors.",
+    id: 8,
+    title: "Clue 8",
+    text: "2nd floor (not Mezzanine) of PGCLL - counselling services, medical care, and wellness programs. By the main doors.",
     image: null,
     answer: "Wellness Centre",
     aliases: [],
     useqr: true
   },
   {
-    id: 8,
-    title: "Clue 8",
-    text: "Go to work out, play sports and meet people through intramurals. Included with your tuition! At the Joan Buddle Service Desk.",
-    image: null,
-    answer: "FBAC",
-    aliases: [],
-    useqr: true
-  },
-  {
     id: 9,
     title: "Clue 9",
-    text: "",
+    text: "Find your comfy study space, collaborate with friends or group members, or challenge the world at table tennis in The Hub. At the front desk.",
     image: null,
     answer: "The Hub",
     aliases: [],
@@ -97,9 +97,9 @@ const CLUES = [
   {
     id: 10,
     title: "Clue 10",
-    text: "Venerable campus pub, near Mary E. Keyes. Rise from the ashes. At the front door.",
+    text: "Go to work out, play sports and meet people through intramurals. Membership included with your tuition! At the Joan Buddle Service Desk.",
     image: null,
-    answer: "The Phoenix",
+    answer: "DBAC",
     aliases: [],
     useqr: true
   },
