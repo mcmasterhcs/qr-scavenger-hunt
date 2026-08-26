@@ -115,7 +115,7 @@ const CLUES = [
   {
     id: 12,
     title: "Clue 12",
-    text: "<p>The Welcome Zone for Move-In! Our raffle desk is where you complete this hunt (and maybe started it).<br><br>On <strong>Saturday</strong>, in the green space between Edwards and Commons. On <strong>Sunday</strong>, in the space between Matthews, Moulton and Wallingford.</p>",
+    text: "<p>The Welcome Zone for Move-In! Our raffle desk is where you complete this hunt (and maybe started it).<br><br>On <strong>Saturday</strong>, we're in <a href="https://maps.app.goo.gl/JCgnh56Vj8rPmzCF9">the green space between Edwards Hall and the Commons Building</a>. On <strong>Sunday</strong>, we're in <a href="https://maps.app.goo.gl/CYcY3ZSks3YEjr1m9">the green space between Matthews Hall, Moulton Hall and Wallingford Hall</a>.</p>",
     image: null,
     answer: "Welcome Zone",
     aliases: [],
