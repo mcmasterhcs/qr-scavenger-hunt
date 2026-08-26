@@ -94,11 +94,9 @@ function openClue(id) {
   // Image: real file or placeholder
   const imgEl = document.getElementById('clue-image');
   if (clue.image) {
-    imgEl.hidden = false;
     imgEl.innerHTML = `<img src="${clue.image}" alt="Image hint for ${clue.title}" />`;
   } else {
-    imgEl.hidden = true;
-    imgEl.innerHTML = '';
+    imgEl.innerHTML = `<span class="placeholder-label">&#128205; Clue Image</span>`;
   }
 
   // Show or hide the scan button based on the clue's useqr setting
