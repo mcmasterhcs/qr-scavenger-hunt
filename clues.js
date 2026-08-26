@@ -17,7 +17,7 @@ const CLUES = [
     id: 1,
     title: "Clue 1",
     text: "In Commons Building, this Service Centre can help you with a number of housing topics and questions. On the wall beside the desk.",
-    image: "images/clue1.jpg",
+    image: "images/clue1.png",
     answer: "Commons Desk",
     aliases: ["Commons"],
     useqr: true
@@ -26,7 +26,7 @@ const CLUES = [
     id: 2,
     title: "Clue 2",
     text: "In the Commons Breezeway, you can pick up your package deliveries from these lockers. On the side of the lockers.",
-    image: null,
+    image: "images/clue2.png",
     answer: "Commons Lockers",
     aliases: ["Lockers"],
     useqr: true
@@ -35,7 +35,7 @@ const CLUES = [
     id: 3,
     title: "Clue 3",
     text: "In Mary E. Keyes Residence, this Service Centre can help you with a number of housing topics and questions. On the wall beside the desk.",
-    image: null,
+    image: "images/clue3.png",
     answer: "Keyes Desk",
     aliases: ["Keyes"],
     useqr: true
@@ -44,7 +44,7 @@ const CLUES = [
     id: 4,
     title: "Clue 4",
     text: "Outside Mary E. Keyes Residence (on the side with the traffic circle), you can pick up deliveries from these lockers. On the side of the lockers.",
-    image: null,
+    image: "images/clue4.png",
     answer: "Keyes Lockers",
     aliases: ["Lockers"],
     useqr: true
@@ -53,7 +53,7 @@ const CLUES = [
     id: 5,
     title: "Clue 5",
     text: "Venerable campus pub, near Mary E. Keyes and the old greenhouse on Scholar's Road. Rise from the ashes. At the front door.",
-    image: null,
+    image: "images/clue5.png",
     answer: "The Phoenix",
     aliases: [],
     useqr: true
@@ -62,7 +62,7 @@ const CLUES = [
     id: 6,
     title: "Clue 6",
     text: "Located in the MSU Plaza, the Campus Store is a great place for supplies, books and apparel. At the front desk.",
-    image: null,
+    image: "images/clue6.png",
     answer: "Campus Store",
     aliases: [],
     useqr: true
@@ -71,7 +71,7 @@ const CLUES = [
     id: 7,
     title: "Clue 7",
     text: "In the MSU Plaza, this library is a great place to study and find resources. Outside the main entrance, behind glass.",
-    image: null,
+    image: "images/clue7.png",
     answer: "Mills Library",
     aliases: [],
     useqr: true
@@ -80,7 +80,7 @@ const CLUES = [
     id: 8,
     title: "Clue 8",
     text: "2nd floor (not Mezzanine) of PGCLL - counselling services, medical care, and wellness programs. By the main doors.",
-    image: null,
+    image: "images/clue8.png",
     answer: "Wellness Centre",
     aliases: [],
     useqr: true
@@ -89,7 +89,7 @@ const CLUES = [
     id: 9,
     title: "Clue 9",
     text: "Find your comfy study space, collaborate with friends or group members, or challenge the world at table tennis in The Hub. At the front desk.",
-    image: null,
+    image: "images/clue9.png",
     answer: "The Hub",
     aliases: [],
     useqr: true
@@ -98,7 +98,7 @@ const CLUES = [
     id: 10,
     title: "Clue 10",
     text: "Go to work out, play sports and meet people through intramurals. Membership included with your tuition! At the Joan Buddle Service Desk.",
-    image: null,
+    image: "images/clue10.png",
     answer: "DBAC",
     aliases: [],
     useqr: true
@@ -107,7 +107,7 @@ const CLUES = [
     id: 11,
     title: "Clue 11",
     text: "In Gilmour Hall, the Registrar's Office Student Services office can help you with financial aid, transcripts, enrolment letters and diplomas questions. Outside Gilmour 108, on the wall.",
-    image: null,
+    image: "images/clue11.png",
     answer: "Gilmour 108",
     aliases: [],
     useqr: true
