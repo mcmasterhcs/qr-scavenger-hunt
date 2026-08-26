@@ -4,7 +4,7 @@
  * Each clue has:
  *   id     : number  — matches the grid button number (1–12)
  *   title  : string  — displayed at the top of the clue screen
- *   text   : string  — the written hint shown to the student
+ *   text   : string  — the written hint shown to the student. Can include HTML for formatting, but avoid <script> tags.
  *   image  : string|null — relative path to an image file, or null for placeholder
  *   answer : string    — the text the QR code encodes (case-insensitive comparison)
  *   aliases: string[] — extra accepted answers for text entry (ignored in QR mode)
