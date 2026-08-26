@@ -27,8 +27,8 @@ const CLUES = [
     title: "Clue 2",
     text: "Books, quiet study nooks, and endless floors of knowledge — this building is a student's best friend at finals time.",
     image: null,
-    answer: "Keyes Service Desk",
-    aliases: ["Keyes"],
+    answer: "Commons Lockers",
+    aliases: ["Lockers"],
     useqr: true
   },
   {
@@ -36,8 +36,8 @@ const CLUES = [
     title: "Clue 3",
     text: "Whether you need a workout or want to cheer on your team, this facility is the heart of campus athletics.",
     image: null,
-    answer: "Campus Store",
-    aliases: [],
+    answer: "Keyes Desk",
+    aliases: ["Keyes"],
     useqr: true
   },
   {
@@ -45,8 +45,8 @@ const CLUES = [
     title: "Clue 4",
     text: "This outdoor gathering space sits at the center of campus. Students cross it a dozen times a day without even thinking about it.",
     image: null,
-    answer: "Mills Library",
-    aliases: [],
+    answer: "Keyes Lockers",
+    aliases: ["Lockers"],
     useqr: true
   },
   {
@@ -54,7 +54,7 @@ const CLUES = [
     title: "Clue 5",
     text: "Looking for help with tuition, financial aid, or enrollment? This administrative building handles it all.",
     image: null,
-    answer: "Wellness Centre",
+    answer: "Campus Store",
     aliases: [],
     useqr: true
   },
@@ -63,7 +63,7 @@ const CLUES = [
     title: "Clue 6",
     text: "Aspiring doctors, nurses, and scientists call this building home. It smells faintly of lab chemicals.",
     image: null,
-    answer: "DBAC",
+    answer: "Mills Library",
     aliases: [],
     useqr: true
   },
@@ -72,7 +72,7 @@ const CLUES = [
     title: "Clue 7",
     text: "Artists, actors, and musicians gather here to rehearse and perform. Check the board out front for upcoming shows.",
     image: null,
-    answer: "The Hub",
+    answer: "Wellness Centre",
     aliases: [],
     useqr: true
   },
@@ -81,7 +81,7 @@ const CLUES = [
     title: "Clue 8",
     text: "This is where your professors hold their offices and where most of your lectures will take place.",
     image: null,
-    answer: "The Phoenix",
+    answer: "FBAC",
     aliases: [],
     useqr: true
   },
@@ -90,7 +90,34 @@ const CLUES = [
     title: "Clue 9",
     text: "Feeling under the weather? This is the place to go for medical care right on campus.",
     image: null,
-    answer: "Welcome",
+    answer: "The Hub",
+    aliases: [],
+    useqr: true
+  },
+  {
+    id: 10,
+    title: "Clue 10",
+    text: "Feeling under the weather? This is the place to go for medical care right on campus.",
+    image: null,
+    answer: "The Phoenix",
+    aliases: [],
+    useqr: true
+  },
+  {
+    id: 11,
+    title: "Clue 11",
+    text: "Feeling under the weather? This is the place to go for medical care right on campus.",
+    image: null,
+    answer: "Gilmour 108",
+    aliases: [],
+    useqr: true
+  },
+  {
+    id: 12,
+    title: "Clue 12",
+    text: "Feeling under the weather? This is the place to go for medical care right on campus.",
+    image: null,
+    answer: "Welcome Zone",
     aliases: [],
     useqr: true
   }
