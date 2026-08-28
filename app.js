@@ -1,6 +1,9 @@
 /* CONSTANTS */
 const STORAGE_KEY = 'scavenger_hunt_progress';
 
+// Set to false on 8/29 to launch the hunt (hides the "not live yet" splash screen).
+const SPLASH_ENABLED = true;
+
 /* STATE */
 let currentClueId = null;  // id of the clue page currently shown
 let scanner = null;         // Html5Qrcode instance when active
@@ -291,3 +294,6 @@ document.getElementById('home-title').addEventListener('click', () => {
 
 /* INIT */
 renderGrid();
+if (SPLASH_ENABLED) {
+  showScreen('splash-screen');
+}

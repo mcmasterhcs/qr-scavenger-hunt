@@ -59,6 +59,28 @@ body {
 }
 .screen.active { display: flex; }
 
+/* SPLASH SCREEN */
+#splash-screen {
+  justify-content: center;
+}
+.splash-content {
+  padding: 40px 24px;
+  text-align: center;
+  margin: auto;
+}
+.splash-content h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--maroon);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.splash-message {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
 /* HOME HEADER */
 .home-header {
   background: var(--maroon);
