@@ -52,7 +52,7 @@ const CLUES = [
   {
     id: 5,
     title: "Clue 5",
-    text: "Venerable campus pub, near Mary E. Keyes and the old greenhouse on Scholar's Road. Rise from the ashes. At the front door.",
+    text: "Venerable campus pub, near Mary E. Keyes and the old greenhouse on Scholar's Road. Rise from the ashes. At the front door. Closed this weekend, but open soon!",
     image: "images/clue5.png",
     answer: "The Phoenix",
     aliases: [],
@@ -70,7 +70,7 @@ const CLUES = [
   {
     id: 7,
     title: "Clue 7",
-    text: "In the MSU Plaza, this library is a great place to study and find resources. Outside the main entrance, behind glass.",
+    text: "In the MSU Plaza, this library is a great place to study and find resources. Outside the main entrance, behind glass. Closed this weekend, but open soon!",
     image: "images/clue7.png",
     answer: "Mills Library",
     aliases: [],
@@ -88,7 +88,7 @@ const CLUES = [
   {
     id: 9,
     title: "Clue 9",
-    text: "Find your comfy study space, collaborate with friends or group members, or challenge the world at table tennis in The Hub. At the front desk.",
+    text: "Find your comfy study space, collaborate with friends or group members, or challenge the world at table tennis in The Hub. At the front desk. Closed this weekend, but open soon!",
     image: "images/clue9.png",
     answer: "The Hub",
     aliases: [],
@@ -115,8 +115,8 @@ const CLUES = [
   {
     id: 12,
     title: "Clue 12",
-    text: "<p>The Welcome Zone for Move-In! Our raffle desk is where you complete this hunt (and maybe started it).<br><br>On <strong>Saturday</strong>, we're in <a href="https://maps.app.goo.gl/JCgnh56Vj8rPmzCF9">the green space between Edwards Hall and the Commons Building</a>. On <strong>Sunday</strong>, we're in <a href="https://maps.app.goo.gl/CYcY3ZSks3YEjr1m9">the green space between Matthews Hall, Moulton Hall and Wallingford Hall</a>.</p>",
-    image: null,
+    text: "<p>The Welcome Zone for Move-In! Our raffle desk is where you complete this hunt (and maybe started it). Look for the balloons and MAC letters!<br><br>On <strong>Saturday</strong>, we're in <a href='https://maps.app.goo.gl/JCgnh56Vj8rPmzCF9'>the green space between Edwards Hall and the Commons Building</a>. On <strong>Sunday</strong>, we're in <a href='https://maps.app.goo.gl/CYcY3ZSks3YEjr1m9'>the green space between Matthews Hall, Moulton Hall and Wallingford Hall</a>.</p>",
+    image: "images/clue12.png",
     answer: "Welcome Zone",
     aliases: [],
     useqr: true
