@@ -2,7 +2,7 @@
 const STORAGE_KEY = 'scavenger_hunt_progress';
 
 // Set to false on 8/29 to launch the hunt (hides the "not live yet" splash screen).
-const SPLASH_ENABLED = true;
+const SPLASH_ENABLED = false;
 
 /* STATE */
 let currentClueId = null;  // id of the clue page currently shown
